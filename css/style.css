@@ -356,6 +356,12 @@ figure {
   color: #fff !important;
 }
 
+#desc-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .fh5co-bg-dark {
   background: #2F3C4F;
   background: #FF9000;
@@ -837,7 +843,7 @@ figure {
 .work .desc {
   display: table-cell;
   vertical-align: middle;
-  height: 270px;
+  height: 400px;
   background: #fff;
   opacity: 0;
   -webkit-transition: 0.3s;
@@ -884,12 +890,13 @@ figure {
   opacity: 1;
 }
 
-.work:hover .desc h3 {
+.work:hover .desc h1 {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 .work:hover .desc span {
+  font-size: 20px;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -991,16 +998,29 @@ figure {
 }
 
 .fh5co-blog .blog-text .stuff {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .fh5co-blog .blog-text .stuff li {
   list-style: none;
   display: inline-block;
   margin-left: 10px;
+}
+
+.fh5co-blog .blog-text .stuff-link {
+  margin: 0;
+  padding: 0;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.05); */
+  /* padding-top: 20px; */
+}
+
+.fh5co-blog .blog-text .stuff-link li {
+  /* list-style: lower-alpha; */
+  /* display: inline-block; */
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
